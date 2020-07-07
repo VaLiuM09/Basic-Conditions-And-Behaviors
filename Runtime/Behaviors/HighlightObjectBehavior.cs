@@ -1,4 +1,4 @@
-﻿using System.Runtime.Serialization;
+using System.Runtime.Serialization;
 using Innoactive.Creator.Core.Attributes;
 using Innoactive.Creator.Core.Configuration;
 using Innoactive.Creator.Core.Configuration.Modes;
@@ -13,7 +13,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Behavior that highlights the target <see cref="ISceneObject"/> with the specified color until the behavior is being deactivated.
     /// </summary>
     [DataContract(IsReference = true)]
-    public class HighlightObjectBehavior : Behavior<HighlightObjectBehavior.EntityData>
+    public class HighlightObjectBehavior : Behavior<HighlightObjectBehavior.EntityData>, IOptional
     {
         /// <summary>
         /// "Highlight object" behavior's data.
