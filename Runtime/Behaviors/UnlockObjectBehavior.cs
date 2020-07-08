@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 using Innoactive.Creator.Core.Attributes;
 using Innoactive.Creator.Core.SceneObjects;
 using Innoactive.Creator.Core.Utils;
@@ -8,6 +9,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// <summary>
     /// Behavior that unlocks the target SceneObject while active, and locks it again on deactivation (unless it was not locked initially)
     /// </summary>
+    [Obsolete("Locking scene objects is obsoleted, consider using the 'Unlocked Objects' list in the Step window.")]
     [DataContract(IsReference = true)]
     public class UnlockObjectBehavior : Behavior<UnlockObjectBehavior.EntityData>
     {

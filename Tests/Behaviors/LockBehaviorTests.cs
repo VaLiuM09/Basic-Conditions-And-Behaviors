@@ -9,6 +9,7 @@ using NUnit.Framework;
 
 namespace Innoactive.Creator.Core.Tests.Behaviors
 {
+#pragma warning disable 618
     public class LockBehaviorTests : RuntimeTests
     {
         private const string targetName = "TestReference";

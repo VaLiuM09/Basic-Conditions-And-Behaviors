@@ -10,6 +10,7 @@ using Object = UnityEngine.Object;
 
 namespace Innoactive.Creator.Core.Tests.Behaviors
 {
+#pragma warning disable 618
     public class UnlockBehaviorTests : RuntimeTests
     {
         private const string targetName = "TestReference";
@@ -23,6 +24,7 @@ namespace Innoactive.Creator.Core.Tests.Behaviors
             targetObject.ChangeUniqueName(targetName);
 
             // When we reference it by reference or unique name in the UnlockObjectBehavior,
+
             UnlockObjectBehavior unlock1 = new UnlockObjectBehavior(targetObject);
             UnlockObjectBehavior unlock2 = new UnlockObjectBehavior(targetName);
 

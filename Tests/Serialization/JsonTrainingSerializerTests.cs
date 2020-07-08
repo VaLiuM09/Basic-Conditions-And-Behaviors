@@ -246,6 +246,7 @@ namespace Innoactive.Creator.Core.Tests.Serialization
             return null;
         }
 
+#pragma warning disable 618
         [UnityTest]
         public IEnumerator LockObjectBehavior()
         {
@@ -261,6 +262,7 @@ namespace Innoactive.Creator.Core.Tests.Serialization
             // When we serialize and deserialize it
             ICourse training2 = Serializer.CourseFromByteArray(Serializer.CourseToByteArray(training1));
 
+
             // Then that's behavior target is still the same.
             LockObjectBehavior behavior1 = training1.Data.FirstChapter.Data.FirstStep.Data.Behaviors.Data.Behaviors.First() as LockObjectBehavior;
             LockObjectBehavior behavior2 = training2.Data.FirstChapter.Data.FirstStep.Data.Behaviors.Data.Behaviors.First() as LockObjectBehavior;
@@ -274,6 +276,7 @@ namespace Innoactive.Creator.Core.Tests.Serialization
 
             return null;
         }
+#pragma warning restore 618
 
         [UnityTest]
         public IEnumerator PlayAudioOnActivationBehavior()
@@ -323,6 +326,7 @@ namespace Innoactive.Creator.Core.Tests.Serialization
             return null;
         }
 
+#pragma warning disable 618
         [UnityTest]
         public IEnumerator UnlockObjectBehavior()
         {
