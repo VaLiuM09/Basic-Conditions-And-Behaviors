@@ -33,7 +33,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// </summary>
             [DataMember]
             [DisplayName("Child behaviors")]
-            [Foldable, ListOf(typeof(FoldableAttribute), typeof(DeletableAttribute)), ExtendableList]
+            [Foldable, ReorderableListOf(typeof(FoldableAttribute), typeof(DeletableAttribute)), ExtendableList]
             public List<IBehavior> Behaviors { get; set; }
 
             /// <inheritdoc />
