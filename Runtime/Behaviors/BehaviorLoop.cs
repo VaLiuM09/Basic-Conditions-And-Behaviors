@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,34 +8,22 @@ using Innoactive.Creator.Core.EntityOwners;
 
 namespace Innoactive.Creator.Core.Behaviors
 {
-    /// <summary>
-    /// Deprecated. Use either the behavior loop or the behavior chain instead.
-    /// A collection of behaviors that are activated and deactivated after each other.
-    /// </summary>
-    [Obsolete("Use either the behavior loop or the behavior chain instead.")]
     [DataContract(IsReference = true)]
-    public class BehaviorSequence : Behavior<BehaviorSequence.EntityData>
+    public class BehaviorLoop : Behavior<BehaviorLoop.EntityData>
     {
         /// <summary>
-        /// Behavior sequence's data.
+        /// Behavior loop's data.
         /// </summary>
-        [DisplayName("Behavior Sequence")]
+        [DisplayName("Behavior Loop")]
         [DataContract(IsReference = true)]
         public class EntityData : EntityCollectionData<IBehavior>, IEntitySequenceDataWithMode<IBehavior>, IBackgroundBehaviorData
         {
-            /// <summary>
-            /// Are child behaviors activated only once or the collection is cycled.
-            /// </summary>
-            [DisplayName("Repeat")]
-            [DataMember]
-            public bool PlaysOnRepeat { get; set; }
-
             /// <summary>
             /// List of child behaviors.
             /// </summary>
             [DataMember]
             [DisplayName("Child behaviors")]
-            [Foldable, ReorderableListOf(typeof(FoldableAttribute), typeof(DeletableAttribute)), ExtendableList]
+            [ListOf(typeof(FoldableAttribute), typeof(DeletableAttribute)), ExtendableList]
             public List<IBehavior> Behaviors { get; set; }
 
             /// <inheritdoc />
@@ -48,14 +35,16 @@ namespace Innoactive.Creator.Core.Behaviors
             /// <inheritdoc />
             public IBehavior Current { get; set; }
 
-
             /// <inheritdoc />
             public string Name { get; set; }
 
             /// <inheritdoc />
             public IMode Mode { get; set; }
-
-            /// <inheritdoc />
+            
+            /// <summary>
+            /// If true, the behavior prevents the completion of a step until it completes the first loop.
+            /// If false, the behavior does not hinder the completion of a step.
+            /// </summary>
             public bool IsBlocking { get; set; }
         }
 
@@ -92,7 +81,7 @@ namespace Innoactive.Creator.Core.Behaviors
             {
                 if (enumerator == null || (enumerator.MoveNext() == false))
                 {
-                    entity = default(IBehavior);
+                    entity = default;
                     return false;
                 }
                 else
@@ -121,11 +110,6 @@ namespace Innoactive.Creator.Core.Behaviors
             /// <inheritdoc />
             public override IEnumerator Update()
             {
-                if (Data.PlaysOnRepeat == false)
-                {
-                    yield break;
-                }
-
                 int endlessLoopCheck = 0;
 
                 while (endlessLoopCheck < 100000)
@@ -158,19 +142,18 @@ namespace Innoactive.Creator.Core.Behaviors
             }
         }
 
-        public BehaviorSequence() : this(default(bool), new List<IBehavior>())
+        public BehaviorLoop() : this(new List<IBehavior>())
         {
         }
 
-        public BehaviorSequence(bool playsOnRepeat, IList<IBehavior> behaviors, string name = "Sequence")
+        public BehaviorLoop(IList<IBehavior> behaviors, string name = "Loop")
         {
-            Data.PlaysOnRepeat = playsOnRepeat;
             Data.Behaviors = new List<IBehavior>(behaviors);
             Data.Name = name;
             Data.IsBlocking = true;
         }
 
-        public BehaviorSequence(bool playsOnRepeat, IList<IBehavior> behaviors, bool isBlocking, string name = "Sequence") : this(playsOnRepeat, behaviors, name)
+        public BehaviorLoop(IList<IBehavior> behaviors, bool isBlocking, string name = "Loop") : this(behaviors, name)
         {
             Data.IsBlocking = isBlocking;
         }
