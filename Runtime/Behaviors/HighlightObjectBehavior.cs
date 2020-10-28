@@ -1,6 +1,5 @@
 using System.Runtime.Serialization;
 using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.Configuration;
 using Innoactive.Creator.Core.Configuration.Modes;
 using Innoactive.Creator.Core.SceneObjects;
 using Innoactive.Creator.Core.Properties;
