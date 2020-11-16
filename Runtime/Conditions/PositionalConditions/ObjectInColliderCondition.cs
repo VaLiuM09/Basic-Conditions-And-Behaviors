@@ -3,6 +3,7 @@ using Innoactive.Creator.Core.Attributes;
 using Innoactive.Creator.Core.SceneObjects;
 using Innoactive.Creator.Core.Properties;
 using Innoactive.Creator.Core.Utils;
+using Innoactive.Creator.Core.Validation;
 
 namespace Innoactive.Creator.Core.Conditions
 {
@@ -42,6 +43,9 @@ namespace Innoactive.Creator.Core.Conditions
             public string Name { get; set; }
 
             /// <inheritdoc />
+#if CREATOR_PRO
+            [OptionalValue]
+#endif
             [DataMember]
             [DisplayName("Required seconds inside")]
             public float RequiredTimeInside { get; set; }

@@ -28,11 +28,11 @@ namespace Innoactive.CreatorEditor.UI.Drawers
 
             Rect keyRect = rect;
             keyRect.height = EditorDrawingHelper.SingleLineHeight;
-            string newKey = EditorGUI.TextField(keyRect, "Localization key", localizedString.Key);
+            string newKey = EditorGUI.TextField(keyRect, new GUIContent("Localization key", label.image, label.tooltip), localizedString.Key);
 
             Rect defaultRect = keyRect;
             defaultRect.y += keyRect.height + EditorDrawingHelper.VerticalSpacing;
-            string newDefault = EditorGUI.TextField(defaultRect, defaultValueName, localizedString.Value);
+            string newDefault = EditorGUI.TextField(defaultRect, new GUIContent(defaultValueName, label.image, label.tooltip), localizedString.Value);
 
             if (newKey != localizedString.Key || newDefault != localizedString.DefaultText)
             {

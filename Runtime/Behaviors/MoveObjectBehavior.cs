@@ -4,6 +4,7 @@ using System.Runtime.Serialization;
 using Innoactive.Creator.Core.Attributes;
 using Innoactive.Creator.Core.SceneObjects;
 using Innoactive.Creator.Core.Utils;
+using Innoactive.Creator.Core.Validation;
 
 namespace Innoactive.Creator.Core.Behaviors
 {
@@ -35,10 +36,13 @@ namespace Innoactive.Creator.Core.Behaviors
             [DataMember]
             [DisplayName("Final position provider")]
             public SceneObjectReference PositionProvider { get; set; }
-
+            
             /// <summary>
             /// Duration of the transition. If duration is equal or less than zero, target object movement is instantaneous.
             /// </summary>
+#if CREATOR_PRO            
+            [OptionalValue]
+#endif
             [DataMember]
             [DisplayName("Duration in seconds")]
             public float Duration { get; set; }
