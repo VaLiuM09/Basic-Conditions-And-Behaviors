@@ -25,6 +25,10 @@ namespace Innoactive.Creator.Core.Conditions
             /// </summary>
             [DataMember]
             [DisplayName("Object to collide into")]
+#if CREATOR_PRO
+            [CheckForCollider]
+            [ColliderAreTrigger]
+#endif
             public ScenePropertyReference<ColliderWithTriggerProperty> TriggerProperty { get; set; }
 
             /// <summary>

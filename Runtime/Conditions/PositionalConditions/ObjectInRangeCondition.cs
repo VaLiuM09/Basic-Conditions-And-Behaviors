@@ -23,14 +23,14 @@ namespace Innoactive.Creator.Core.Conditions
             /// The object to measure distance from.
             /// </summary>
             [DataMember]
-            [DisplayName("First object")]
+            [DisplayName("Reference object")]
             public SceneObjectReference DistanceDetector { get; set; }
 
             /// <summary>
             /// The tracked object.
             /// </summary>
             [DataMember]
-            [DisplayName("Second object")]
+            [DisplayName("Tracked object")]
             public SceneObjectReference Target { get; set; }
 
             /// <summary>
