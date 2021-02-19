@@ -12,6 +12,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Behavior that highlights the target <see cref="ISceneObject"/> with the specified color until the behavior is being deactivated.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#hightlight-object")]
     public class HighlightObjectBehavior : Behavior<HighlightObjectBehavior.EntityData>, IOptional
     {
         /// <summary>

@@ -12,6 +12,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// A collection of behaviors that are activated and deactivated after each other.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#behavior-sequence")]
     public class BehaviorSequence : Behavior<BehaviorSequence.EntityData>
     {
         /// <summary>
@@ -33,7 +34,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// </summary>
             [DataMember]
             [DisplayName("Child behaviors")]
-            [Foldable, ReorderableListOf(typeof(FoldableAttribute), typeof(DeletableAttribute)), ExtendableList]
+            [Foldable, ReorderableListOf(typeof(FoldableAttribute), typeof(DeletableAttribute), typeof(HelpAttribute)), ExtendableList]
             public List<IBehavior> Behaviors { get; set; }
 
             /// <inheritdoc />

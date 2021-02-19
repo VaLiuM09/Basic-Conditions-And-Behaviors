@@ -9,6 +9,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Behavior that waits for `DelayTime` seconds before finishing its activation.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#delay")]
     public class DelayBehavior : Behavior<DelayBehavior.EntityData>
     {
         /// <summary>
