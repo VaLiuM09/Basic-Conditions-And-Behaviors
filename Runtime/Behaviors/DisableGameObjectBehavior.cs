@@ -23,7 +23,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Object to disable.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to disable")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <inheritdoc />

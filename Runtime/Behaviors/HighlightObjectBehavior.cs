@@ -32,7 +32,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Highlight color set in the Step Inspector.
             /// </summary>
             [DataMember]
-            [DisplayName("Highlight color")]
+            [DisplayName("Color")]
             public Color HighlightColor
             {
                 get { return CustomHighlightColor.Value; }
@@ -44,7 +44,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Target scene object to be highlighted.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to highlight")]
+            [DisplayName("Object")]
             public ScenePropertyReference<IHighlightProperty> ObjectToHighlight { get; set; }
 
             /// <inheritdoc />

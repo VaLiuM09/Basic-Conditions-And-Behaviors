@@ -24,7 +24,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// The object to unlock.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to unlock")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <summary>

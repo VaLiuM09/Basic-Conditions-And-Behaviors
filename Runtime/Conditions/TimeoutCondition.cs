@@ -21,7 +21,7 @@ namespace Innoactive.Creator.Core.Conditions
             /// The delay before the condition completes.
             /// </summary>
             [DataMember]
-            [DisplayName("Wait for seconds")]
+            [DisplayName("Wait (in seconds)")]
             public float Timeout { get; set; }
 
             /// <inheritdoc />

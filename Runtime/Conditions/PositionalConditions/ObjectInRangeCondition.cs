@@ -21,18 +21,18 @@ namespace Innoactive.Creator.Core.Conditions
         public class EntityData : IObjectInTargetData
         {
             /// <summary>
+            /// The tracked object.
+            /// </summary>
+            [DataMember]
+            [DisplayName("Object")]
+            public SceneObjectReference Target { get; set; }
+
+            /// <summary>
             /// The object to measure distance from.
             /// </summary>
             [DataMember]
             [DisplayName("Reference object")]
             public SceneObjectReference DistanceDetector { get; set; }
-
-            /// <summary>
-            /// The tracked object.
-            /// </summary>
-            [DataMember]
-            [DisplayName("Tracked object")]
-            public SceneObjectReference Target { get; set; }
 
             /// <summary>
             /// The required distance between two objects to trigger the condition.

@@ -20,7 +20,7 @@ namespace Innoactive.Creator.Core.Behaviors
         public class EntityData : IBehaviorData
         {
             [DataMember]
-            [DisplayName("Delay in seconds")]
+            [DisplayName("Delay (in seconds)")]
             public float DelayTime { get; set; }
 
             public Metadata Metadata { get; set; }

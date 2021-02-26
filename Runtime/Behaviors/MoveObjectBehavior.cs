@@ -28,7 +28,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Target scene object to be moved.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to move")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <summary>
@@ -45,7 +45,7 @@ namespace Innoactive.Creator.Core.Behaviors
             [OptionalValue]
 #endif
             [DataMember]
-            [DisplayName("Duration in seconds")]
+            [DisplayName("Animation (in seconds)")]
             public float Duration { get; set; }
 
             /// <inheritdoc />

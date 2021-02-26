@@ -22,22 +22,22 @@ namespace Innoactive.Creator.Core.Conditions
         public class EntityData : IObjectInTargetData
         {
             /// <summary>
+            /// The object that has to enter the collider.
+            /// </summary>
+            [DataMember]
+            [DisplayName("Object")]
+            public SceneObjectReference TargetObject { get; set; }
+
+            /// <summary>
             /// The collider with trigger to enter.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to collide into")]
+            [DisplayName("Collider")]
 #if CREATOR_PRO
             [CheckForCollider]
             [ColliderAreTrigger]
 #endif
             public ScenePropertyReference<ColliderWithTriggerProperty> TriggerProperty { get; set; }
-
-            /// <summary>
-            /// The object that has to enter the collider.
-            /// </summary>
-            [DataMember]
-            [DisplayName("Target object")]
-            public SceneObjectReference TargetObject { get; set; }
 
             /// <inheritdoc />
             public bool IsCompleted { get; set; }
