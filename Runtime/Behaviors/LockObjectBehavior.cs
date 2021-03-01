@@ -24,7 +24,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// The object to lock.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to lock")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <summary>

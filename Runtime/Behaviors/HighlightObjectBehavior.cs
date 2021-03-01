@@ -12,6 +12,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Behavior that highlights the target <see cref="ISceneObject"/> with the specified color until the behavior is being deactivated.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#hightlight-object")]
     public class HighlightObjectBehavior : Behavior<HighlightObjectBehavior.EntityData>, IOptional
     {
         /// <summary>
@@ -31,7 +32,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Highlight color set in the Step Inspector.
             /// </summary>
             [DataMember]
-            [DisplayName("Highlight color")]
+            [DisplayName("Color")]
             public Color HighlightColor
             {
                 get { return CustomHighlightColor.Value; }
@@ -43,7 +44,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Target scene object to be highlighted.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to highlight")]
+            [DisplayName("Object")]
             public ScenePropertyReference<IHighlightProperty> ObjectToHighlight { get; set; }
 
             /// <inheritdoc />

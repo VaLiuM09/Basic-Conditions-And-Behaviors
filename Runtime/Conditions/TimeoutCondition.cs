@@ -8,6 +8,7 @@ namespace Innoactive.Creator.Core.Conditions
     /// A condition that completes when a certain amount of time has passed.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-conditions.html#timeout")]
     public class TimeoutCondition : Condition<TimeoutCondition.EntityData>
     {
         /// <summary>
@@ -20,7 +21,7 @@ namespace Innoactive.Creator.Core.Conditions
             /// The delay before the condition completes.
             /// </summary>
             [DataMember]
-            [DisplayName("Wait for seconds")]
+            [DisplayName("Wait (in seconds)")]
             public float Timeout { get; set; }
 
             /// <inheritdoc />

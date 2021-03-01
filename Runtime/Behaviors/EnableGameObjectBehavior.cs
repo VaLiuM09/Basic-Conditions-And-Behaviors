@@ -9,6 +9,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Enables gameObject of target ISceneObject.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#enable-object")]
     public class EnableGameObjectBehavior : Behavior<EnableGameObjectBehavior.EntityData>
     {
         /// <summary>
@@ -22,7 +23,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// The object to enable.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to enable")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <inheritdoc />

@@ -12,6 +12,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// A behavior that plays audio.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#audioplay-audio-file")]
     public class PlayAudioBehavior : Behavior<PlayAudioBehavior.EntityData>, IOptional
     {
         /// <summary>

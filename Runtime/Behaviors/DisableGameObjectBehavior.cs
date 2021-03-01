@@ -9,6 +9,7 @@ namespace Innoactive.Creator.Core.Behaviors
     /// Disables gameObject of target ISceneObject.
     /// </summary>
     [DataContract(IsReference = true)]
+    [HelpLink("https://developers.innoactive.de/documentation/creator/latest/articles/innoactive-creator/default-behaviors.html#disable-object")]
     public class DisableGameObjectBehavior : Behavior<DisableGameObjectBehavior.EntityData>
     {
         /// <summary>
@@ -22,7 +23,7 @@ namespace Innoactive.Creator.Core.Behaviors
             /// Object to disable.
             /// </summary>
             [DataMember]
-            [DisplayName("Object to disable")]
+            [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
             /// <inheritdoc />
