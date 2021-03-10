@@ -12,12 +12,6 @@ namespace Innoactive.Creator.Core.Properties
         [SerializeField]
         private GameObject highlightObject = null;
 
-        public GameObject HighlightObject
-        {
-            get => highlightObject;
-            set => highlightObject = value;
-        }
-
         /// <inheritdoc/>
         public override void Highlight(Color highlightColor)
         {
