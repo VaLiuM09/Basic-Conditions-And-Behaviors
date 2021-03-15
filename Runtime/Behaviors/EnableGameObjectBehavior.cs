@@ -29,6 +29,10 @@ namespace Innoactive.Creator.Core.Behaviors
             /// <inheritdoc />
             public Metadata Metadata { get; set; }
 
+            [DataMember]
+            [DisplayName("Disable on Deactivation")]
+            public bool DisableOnDeactivating { get; set; }
+
             /// <inheritdoc />
             public string Name { get; set; }
         }
@@ -43,6 +47,22 @@ namespace Innoactive.Creator.Core.Behaviors
             public override void Start()
             {
                 Data.Target.Value.GameObject.SetActive(true);
+            }
+        }
+        
+        private class DeactivatingProcess : InstantProcess<EntityData>
+        {
+            public DeactivatingProcess(EntityData data) : base(data)
+            {
+            }
+
+            /// <inheritdoc />
+            public override void Start()
+            {
+                if (Data.DisableOnDeactivating)
+                {
+                    Data.Target.Value.GameObject.SetActive(false);
+                }
             }
         }
 
@@ -66,6 +86,11 @@ namespace Innoactive.Creator.Core.Behaviors
         public override IProcess GetActivatingProcess()
         {
             return new ActivatingProcess(Data);
+        }
+
+        public override IProcess GetDeactivatingProcess()
+        {
+            return new DeactivatingProcess(Data);
         }
     }
 }
