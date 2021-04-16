@@ -51,7 +51,7 @@ namespace Innoactive.Creator.Core.Behaviors
         {
             return new ActivatingProcess(Data);
         }
-
+        
         public DisableGameObjectBehavior() : this("")
         {
         }
