@@ -42,7 +42,7 @@ namespace Innoactive.Creator.Core.Tests.Serialization
             Assert.IsNotNull(condition2);
             Assert.AreEqual(condition1.Data.Range, condition2.Data.Range);
             Assert.AreEqual(condition1.Data.Target.Value, condition2.Data.Target.Value);
-            Assert.AreEqual(condition1.Data.DistanceDetector.Value, condition2.Data.DistanceDetector.Value);
+            Assert.AreEqual(condition1.Data.ReferenceProperty.Value, condition2.Data.ReferenceProperty.Value);
 
             // Cleanup
             TestingUtils.DestroySceneObject(testObjectToo);
