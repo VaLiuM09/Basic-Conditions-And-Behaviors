@@ -30,7 +30,7 @@ namespace Innoactive.Creator.Core.Behaviors
             public Metadata Metadata { get; set; }
 
             [DataMember]
-            [DisplayName("Disable on Deactivation")]
+            [DisplayName("Disable Object after step is complete")]
             public bool DisableOnDeactivating { get; set; }
 
             /// <inheritdoc />
