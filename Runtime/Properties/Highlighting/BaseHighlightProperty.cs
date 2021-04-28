@@ -18,7 +18,10 @@ namespace Innoactive.Creator.Core.Properties
 
         /// <inheritdoc/>
         public event EventHandler<EventArgs> Unhighlighted;
-
+        
+        [Tooltip("If this is filled the given Material will be used as highlight material.")]
+        public Material HighlightMaterial;
+        
         /// <summary>
         /// Is currently highlighted.
         /// </summary>
