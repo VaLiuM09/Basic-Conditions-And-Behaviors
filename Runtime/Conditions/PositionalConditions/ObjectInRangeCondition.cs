@@ -1,9 +1,11 @@
+using System;
 using System.Runtime.Serialization;
 using Innoactive.Creator.Core.Attributes;
 using Innoactive.Creator.Core.SceneObjects;
 using Innoactive.Creator.Core.Properties;
 using Innoactive.Creator.Core.Utils;
 using Innoactive.Creator.Core.Validation;
+using Innoactive.Creator.Unity;
 
 namespace Innoactive.Creator.Core.Conditions
 {
@@ -27,12 +29,38 @@ namespace Innoactive.Creator.Core.Conditions
             [DisplayName("Object")]
             public SceneObjectReference Target { get; set; }
 
+            private ScenePropertyReference<TransformInRangeDetectorProperty> referenceProperty;
+
             /// <summary>
             /// The object to measure distance from.
             /// </summary>
             [DataMember]
             [DisplayName("Reference object")]
-            public SceneObjectReference DistanceDetector { get; set; }
+            public ScenePropertyReference<TransformInRangeDetectorProperty> ReferenceProperty
+            {
+                get
+                {
+#pragma warning disable 618
+                    if ((referenceProperty == null || referenceProperty.IsEmpty()) && DistanceDetector != null && DistanceDetector.IsEmpty() == false)
+                    {
+                        DistanceDetector.Value.GameObject.GetOrAddComponent<TransformInRangeDetectorProperty>();
+                        referenceProperty = new ScenePropertyReference<TransformInRangeDetectorProperty>(DistanceDetector.UniqueName);
+                        DistanceDetector = null;
+                    }
+#pragma warning restore 618
+
+                    return referenceProperty;
+                }
+
+                set => referenceProperty = value;
+            }
+
+            /// <summary>
+            /// The object to measure distance from.
+            /// </summary>
+            [HideInTrainingInspector]
+            [Obsolete("Use 'ReferenceProperty' instead.")]
+            public SceneObjectReference DistanceDetector;
 
             /// <summary>
             /// The required distance between two objects to trigger the condition.
@@ -72,7 +100,7 @@ namespace Innoactive.Creator.Core.Conditions
         public ObjectInRangeCondition(string target, string detector, float range, float requiredTimeInTarget = 0, string name = "Object Nearby")
         {
             Data.Target = new SceneObjectReference(target);
-            Data.DistanceDetector = new SceneObjectReference(detector);
+            Data.ReferenceProperty = new ScenePropertyReference<TransformInRangeDetectorProperty>(detector);
             Data.Range = range;
             Data.RequiredTimeInside = requiredTimeInTarget;
             Data.Name = name;
@@ -84,10 +112,18 @@ namespace Innoactive.Creator.Core.Conditions
             {
             }
 
+            public override void Start()
+            {
+                Data.ReferenceProperty.Value.SetTrackedTransform(Data.Target.Value.GameObject.transform);
+                Data.ReferenceProperty.Value.DetectionRange = Data.Range;
+                
+                base.Start();
+            }
+
             /// <inheritdoc />
             protected override bool IsInside()
             {
-                return (Data.Target.Value.GameObject.transform.position - Data.DistanceDetector.Value.GameObject.transform.position).magnitude <= Data.Range;
+                return Data.ReferenceProperty.Value.IsTargetInsideRange();
             }
         }
 
@@ -100,8 +136,7 @@ namespace Innoactive.Creator.Core.Conditions
             /// <inheritdoc />
             public override void Complete()
             {
-                Data.Target.Value.GameObject.transform.position = Data.DistanceDetector.Value.GameObject.transform.position;
-                Data.Target.Value.GameObject.transform.rotation = Data.DistanceDetector.Value.GameObject.transform.rotation;
+                Data.Target.Value.GameObject.transform.position = Data.ReferenceProperty.Value.gameObject.transform.position;
             }
         }
 

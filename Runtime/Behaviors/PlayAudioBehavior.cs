@@ -35,6 +35,13 @@ namespace Innoactive.Creator.Core.Behaviors
             public BehaviorExecutionStages ExecutionStages { get; set; }
 
             /// <summary>
+            /// Audio volume this audio file should be played with.
+            /// </summary>
+            [DataMember]
+            [DisplayName("Audio Volume (from 0 to 1)")]
+            public float Volume { get; set; } = 1.0f;
+
+            /// <summary>
             /// The Unity's audio source to play the sound. If not set, it will use <seealso cref="RuntimeConfigurator.Configuration.InstructionPlayer"/>.
             /// </summary>
             public AudioSource AudioPlayer { get; set; }
@@ -71,6 +78,7 @@ namespace Innoactive.Creator.Core.Behaviors
                     if (Data.AudioData.HasAudioClip)
                     {
                         Data.AudioPlayer.clip = Data.AudioData.AudioClip;
+                        Data.AudioPlayer.volume = Mathf.Clamp(Data.Volume, 0.0f, 1.0f);
                         Data.AudioPlayer.Play();
                     }
                     else

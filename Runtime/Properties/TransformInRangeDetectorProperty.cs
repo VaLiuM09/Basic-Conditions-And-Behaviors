@@ -51,13 +51,9 @@ namespace Innoactive.Creator.Core.Properties
             }
         }
 
-        protected virtual bool IsTargetInsideRange()
+        public virtual bool IsTargetInsideRange()
         {
-            // Compare squared distance for better performance
-            float distanceSqr = Vector3.SqrMagnitude(transform.position - trackedTransform.position);
-            bool isInsideRange = (distanceSqr <= DetectionRange * DetectionRange);
-
-            return isInsideRange;
+            return Vector3.Distance(transform.position, trackedTransform.position) < DetectionRange;
         }
 
         public void SetTrackedTransform(Transform transformToBeTracked)
