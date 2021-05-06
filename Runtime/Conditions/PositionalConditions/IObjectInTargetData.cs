@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace Innoactive.Creator.Core.Conditions
+namespace VPG.Creator.Core.Conditions
 {
     /// <summary>
     /// The data interface for "object inside target" conditions.

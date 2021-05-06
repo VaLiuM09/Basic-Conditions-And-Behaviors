@@ -1,15 +1,15 @@
 using System.Collections;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Tests.Builder;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Tests.Utils;
-using Innoactive.Creator.Tests.Utils.Mocks;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Tests.Builder;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Tests.Utils;
+using VPG.Creator.Tests.Utils.Mocks;
 using UnityEngine;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 
-namespace Innoactive.Creator.Core.Tests.Behaviors
+namespace VPG.Creator.Core.Tests.Behaviors
 {
     public class DisableGameObjectBehaviorTests : RuntimeTests
     {

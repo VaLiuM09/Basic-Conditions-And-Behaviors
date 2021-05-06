@@ -1,14 +1,14 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using Innoactive.Creator.Core.Audio;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.Internationalization;
-using Innoactive.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Audio;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.Internationalization;
+using VPG.Creator.Core.SceneObjects;
 
-namespace Innoactive.Creator.Tests.Builder
+namespace VPG.Creator.Tests.Builder
 {
     /// <summary>
     /// Basic step builder that creates step of type <typeparamref name="Step" />.

@@ -1,11 +1,11 @@
 ﻿using System.Collections;
-using Innoactive.Creator.Core.Conditions;
-using Innoactive.Creator.Tests.Utils;
+using VPG.Creator.Core.Conditions;
+using VPG.Creator.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Conditions
+namespace VPG.Creator.Core.Tests.Conditions
 {
     public class TimeoutConditionTests : RuntimeTests
     {

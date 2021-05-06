@@ -1,7 +1,7 @@
-﻿using Innoactive.Creator.Core.Behaviors;
-using Innoactive.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Creator.Core.Behaviors;
+using VPG.CreatorEditor.UI.StepInspector.Menu;
 
-namespace Innoactive.CreatorEditor.UI.Behaviors
+namespace VPG.CreatorEditor.UI.Behaviors
 {
     /// <inheritdoc />
     public class BehaviorSequenceMenuItem : MenuItem<IBehavior>

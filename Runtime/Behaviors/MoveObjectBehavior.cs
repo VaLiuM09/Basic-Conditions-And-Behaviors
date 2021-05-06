@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Utils;
-using Innoactive.Creator.Core.Validation;
+using VPG.Creator.Core.Attributes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Utils;
+using VPG.Creator.Core.Validation;
 
-namespace Innoactive.Creator.Core.Behaviors
+namespace VPG.Creator.Core.Behaviors
 {
     /// <summary>
     /// Behavior that moves target SceneObject to the position and rotation of another TargetObject.

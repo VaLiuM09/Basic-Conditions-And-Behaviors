@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Conditions
+namespace VPG.Creator.Core.Conditions
 {
     /// <summary>
     /// An active process for "object in target" conditions.

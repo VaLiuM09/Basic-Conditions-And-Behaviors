@@ -1,12 +1,12 @@
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.Configuration.Modes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Core.Utils;
+using VPG.Creator.Core.Attributes;
+using VPG.Creator.Core.Configuration.Modes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Core.Utils;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Behaviors
+namespace VPG.Creator.Core.Behaviors
 {
     /// <summary>
     /// Behavior that highlights the target <see cref="ISceneObject"/> with the specified color until the behavior is being deactivated.

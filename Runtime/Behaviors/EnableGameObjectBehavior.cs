@@ -1,9 +1,9 @@
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Utils;
+using VPG.Creator.Core.Attributes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Utils;
 
-namespace Innoactive.Creator.Core.Behaviors
+namespace VPG.Creator.Core.Behaviors
 {
     /// <summary>
     /// Enables gameObject of target ISceneObject.

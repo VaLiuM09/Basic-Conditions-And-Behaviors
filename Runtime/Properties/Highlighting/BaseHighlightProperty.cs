@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Properties
+namespace VPG.Creator.Core.Properties
 {
     /// <summary>
     /// Abstract base property for highlight properties.

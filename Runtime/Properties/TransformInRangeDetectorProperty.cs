@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Properties
+namespace VPG.Creator.Core.Properties
 {
     public class TransformInRangeDetectorProperty : TrainingSceneObjectProperty
     {

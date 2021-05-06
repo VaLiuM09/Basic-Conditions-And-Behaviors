@@ -1,13 +1,13 @@
 using System;
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Core.Utils;
-using Innoactive.Creator.Core.Validation;
-using Innoactive.Creator.Unity;
+using VPG.Creator.Core.Attributes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Core.Utils;
+using VPG.Creator.Core.Validation;
+using VPG.Creator.Unity;
 
-namespace Innoactive.Creator.Core.Conditions
+namespace VPG.Creator.Core.Conditions
 {
     /// <summary>
     /// Condition that is completed when distance between `Target` and `TransformInRangeDetector` is closer than `range` units.

@@ -1,9 +1,9 @@
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Tests.Utils;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Tests.Conditions
+namespace VPG.Creator.Core.Tests.Conditions
 {
     public class ObjectInTargetTestBase : RuntimeTests
     {

@@ -1,14 +1,14 @@
 ﻿using System.Collections;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Tests.Utils;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Tests.Utils;
 using UnityEngine.TestTools;
 using UnityEngine;
 using NUnit.Framework;
 using Object = UnityEngine.Object;
 
-namespace Innoactive.Creator.Core.Tests.Behaviors
+namespace VPG.Creator.Core.Tests.Behaviors
 {
 #pragma warning disable 618
     public class UnlockBehaviorTests : RuntimeTests
