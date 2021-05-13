@@ -1,7 +1,7 @@
-﻿using Innoactive.Creator.Core.Conditions;
-using Innoactive.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Creator.Core.Conditions;
+using VPG.CreatorEditor.UI.StepInspector.Menu;
 
-namespace Innoactive.CreatorEditor.UI.Conditions
+namespace VPG.CreatorEditor.UI.Conditions
 {
     /// <inheritdoc />
     public class TimeoutMenuItem : MenuItem<ICondition>

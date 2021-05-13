@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.Configuration.Modes;
-using Innoactive.Creator.Tests.Utils;
-using Innoactive.Creator.Tests.Utils.Mocks;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.Configuration.Modes;
+using VPG.Creator.Tests.Utils;
+using VPG.Creator.Tests.Utils.Mocks;
 using UnityEngine.Assertions;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Behaviors
+namespace VPG.Creator.Core.Tests.Behaviors
 {
     public class BehaviorSequenceTests : RuntimeTests
     {

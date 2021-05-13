@@ -1,10 +1,10 @@
 using System;
 using System.Reflection;
-using Innoactive.Creator.Core.Audio;
-using Innoactive.CreatorEditor.UI.Drawers;
+using VPG.Creator.Core.Audio;
+using VPG.CreatorEditor.UI.Drawers;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.Core.UI.Drawers
+namespace VPG.CreatorEditor.Core.UI.Drawers
 {
     /// <summary>
     /// Training drawer for <see cref="IAudioData"/> members.

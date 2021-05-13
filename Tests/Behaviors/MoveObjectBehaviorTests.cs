@@ -1,13 +1,13 @@
 using System.Collections;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Tests.Utils;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Behaviors
+namespace VPG.Creator.Core.Tests.Behaviors
 {
     public class MoveObjectBehaviorTests : RuntimeTests
     {

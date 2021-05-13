@@ -1,11 +1,11 @@
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Core.Utils;
-using Innoactive.Creator.Core.Validation;
+using VPG.Creator.Core.Attributes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Core.Utils;
+using VPG.Creator.Core.Validation;
 
-namespace Innoactive.Creator.Core.Conditions
+namespace VPG.Creator.Core.Conditions
 {
     /// <summary>
     /// Condition which is completed when `TargetObject` gets inside `TriggerProperty`'s collider.

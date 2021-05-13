@@ -1,9 +1,9 @@
 using System;
-using Innoactive.Creator.Core.Internationalization;
+using VPG.Creator.Core.Internationalization;
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.UI.Drawers
+namespace VPG.CreatorEditor.UI.Drawers
 {
     /// <summary>
     /// Custom drawer for localized strings in PlayAudioBehavior's audio data to flatten visible hierarchy.

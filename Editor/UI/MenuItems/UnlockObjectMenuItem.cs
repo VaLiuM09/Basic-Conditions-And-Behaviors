@@ -1,8 +1,8 @@
 ﻿using System;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.CreatorEditor.UI.StepInspector.Menu;
+using VPG.Creator.Core.Behaviors;
+using VPG.CreatorEditor.UI.StepInspector.Menu;
 
-namespace Innoactive.CreatorEditor.UI.Behaviors
+namespace VPG.CreatorEditor.UI.Behaviors
 {
     /// <inheritdoc />
     [Obsolete("Locking scene objects is obsoleted, consider using the 'Unlocked Objects' list in the Step window.")]

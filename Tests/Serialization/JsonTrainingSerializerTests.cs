@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Innoactive.Creator.Core.Audio;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Conditions;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Tests.Builder;
-using Innoactive.Creator.Core.Internationalization;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Tests.Utils;
-using Innoactive.Creator.Tests.Utils.Mocks;
+using VPG.Creator.Core.Audio;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Conditions;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Tests.Builder;
+using VPG.Creator.Core.Internationalization;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Tests.Utils;
+using VPG.Creator.Tests.Utils.Mocks;
 using UnityEngine.Assertions;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Serialization
+namespace VPG.Creator.Core.Tests.Serialization
 {
     public class JsonTrainingSerializerTests : RuntimeTests
     {

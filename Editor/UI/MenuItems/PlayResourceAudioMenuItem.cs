@@ -1,9 +1,9 @@
-﻿using Innoactive.Creator.Core.Audio;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Internationalization;
-using Innoactive.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Creator.Core.Audio;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Internationalization;
+using VPG.CreatorEditor.UI.StepInspector.Menu;
 
-namespace Innoactive.CreatorEditor.UI.Behaviors
+namespace VPG.CreatorEditor.UI.Behaviors
 {
     /// <inheritdoc />
     public class PlayResourceAudioMenuItem : MenuItem<IBehavior>

@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using System.Runtime.Serialization;
-using Innoactive.Creator.Core.Attributes;
+using VPG.Creator.Core.Attributes;
 
-namespace Innoactive.Creator.Core.Behaviors
+namespace VPG.Creator.Core.Behaviors
 {
     /// <summary>
     /// Behavior that waits for `DelayTime` seconds before finishing its activation.

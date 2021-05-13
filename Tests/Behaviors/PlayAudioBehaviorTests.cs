@@ -1,14 +1,14 @@
 using System.Collections;
-using Innoactive.Creator.Core.Audio;
-using Innoactive.Creator.Core.Behaviors;
-using Innoactive.Creator.Core.Configuration;
-using Innoactive.Creator.Core.Internationalization;
-using Innoactive.Creator.Tests.Utils;
+using VPG.Creator.Core.Audio;
+using VPG.Creator.Core.Behaviors;
+using VPG.Creator.Core.Configuration;
+using VPG.Creator.Core.Internationalization;
+using VPG.Creator.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Behaviors
+namespace VPG.Creator.Core.Tests.Behaviors
 {
     public class PlayAudioBehaviorTests : RuntimeTests
     {

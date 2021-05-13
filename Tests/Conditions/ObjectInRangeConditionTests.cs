@@ -1,12 +1,12 @@
 using NUnit.Framework;
 using System.Collections;
-using Innoactive.Creator.Core.Conditions;
-using Innoactive.Creator.Core.Properties;
-using Innoactive.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Conditions;
+using VPG.Creator.Core.Properties;
+using VPG.Creator.Core.SceneObjects;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Innoactive.Creator.Core.Tests.Conditions
+namespace VPG.Creator.Core.Tests.Conditions
 {
     [TestFixture]
     public class ObjectInRangeConditionTests : ObjectInTargetTestBase
