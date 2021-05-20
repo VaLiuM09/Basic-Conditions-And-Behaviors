@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VPG.Creator.Core.Properties
+namespace VPG.Core.Properties
 {
     /// <summary>
     /// Highlight property which enables a referenced <see cref="highlightObject"/>,

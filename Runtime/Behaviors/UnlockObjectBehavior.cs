@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Runtime.Serialization;
-using VPG.Creator.Core.Attributes;
-using VPG.Creator.Core.SceneObjects;
-using VPG.Creator.Core.Utils;
+using VPG.Core.Attributes;
+using VPG.Core.SceneObjects;
+using VPG.Core.Utils;
 
-namespace VPG.Creator.Core.Behaviors
+namespace VPG.Core.Behaviors
 {
     /// <summary>
     /// Behavior that unlocks the target SceneObject while active, and locks it again on deactivation (unless it was not locked initially)

@@ -1,10 +1,10 @@
 using System;
-using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Behaviors;
-using VPG.CreatorEditor.UI.Drawers;
+using VPG.Core.Audio;
+using VPG.Core.Behaviors;
+using VPG.Editor.UI.Drawers;
 using UnityEngine;
 
-namespace VPG.CreatorEditor.Core.UI.Drawers
+namespace VPG.Editor.Core.UI.Drawers
 {
     /// <summary>
     /// Default drawer for <see cref="PlayAudioBehavior"/>. It sets displayed name to "Play Audio File".

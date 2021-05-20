@@ -1,8 +1,8 @@
 using System.Runtime.Serialization;
-using VPG.Creator.Core.Attributes;
+using VPG.Core.Attributes;
 using UnityEngine;
 
-namespace VPG.Creator.Core.Conditions
+namespace VPG.Core.Conditions
 {
     /// <summary>
     /// A condition that completes when a certain amount of time has passed.

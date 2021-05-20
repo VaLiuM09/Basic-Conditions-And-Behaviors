@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using System.Runtime.Serialization;
-using VPG.Creator.Core.Attributes;
+using VPG.Core.Attributes;
 
-namespace VPG.Creator.Core.Behaviors
+namespace VPG.Core.Behaviors
 {
     /// <summary>
     /// Behavior that waits for `DelayTime` seconds before finishing its activation.

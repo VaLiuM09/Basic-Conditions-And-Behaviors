@@ -1,7 +1,7 @@
-﻿using VPG.Creator.Core.Behaviors;
-using VPG.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Core.Behaviors;
+using VPG.Editor.UI.StepInspector.Menu;
 
-namespace VPG.CreatorEditor.UI.Behaviors
+namespace VPG.Editor.UI.Behaviors
 {
     /// <inheritdoc />
     public class EnableGameObjectMenuItem : MenuItem<IBehavior>

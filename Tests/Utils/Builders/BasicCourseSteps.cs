@@ -1,10 +1,10 @@
 using System.Linq;
-using VPG.Creator.Core.Conditions;
-using VPG.Creator.Core.Configuration;
-using VPG.Creator.Core.SceneObjects;
-using VPG.Creator.Core.Utils;
+using VPG.Core.Conditions;
+using VPG.Core.Configuration;
+using VPG.Core.SceneObjects;
+using VPG.Core.Utils;
 
-namespace VPG.Creator.Tests.Builder
+namespace VPG.Tests.Builder
 {
     /// <summary>
     /// Static class to provide fast access to predefined builders.

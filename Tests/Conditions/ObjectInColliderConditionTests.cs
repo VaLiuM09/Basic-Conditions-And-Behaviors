@@ -1,12 +1,12 @@
 using NUnit.Framework;
 using System.Collections;
-using VPG.Creator.Core.Conditions;
-using VPG.Creator.Core.Properties;
-using VPG.Creator.Core.SceneObjects;
+using VPG.Core.Conditions;
+using VPG.Core.Properties;
+using VPG.Core.SceneObjects;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace VPG.Creator.Core.Tests.Conditions
+namespace VPG.Core.Tests.Conditions
 {
     [TestFixture]
     public class ObjectInColliderConditionTests : ObjectInTargetTestBase

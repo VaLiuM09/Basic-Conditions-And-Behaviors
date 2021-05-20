@@ -1,14 +1,14 @@
 using System.Collections;
-using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Core.Configuration;
-using VPG.Creator.Core.Internationalization;
-using VPG.Creator.Tests.Utils;
+using VPG.Core.Audio;
+using VPG.Core.Behaviors;
+using VPG.Core.Configuration;
+using VPG.Core.Internationalization;
+using VPG.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace VPG.Creator.Core.Tests.Behaviors
+namespace VPG.Core.Tests.Behaviors
 {
     public class PlayAudioBehaviorTests : RuntimeTests
     {

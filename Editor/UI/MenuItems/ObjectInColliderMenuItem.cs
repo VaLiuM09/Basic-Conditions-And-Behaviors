@@ -1,7 +1,7 @@
-﻿using VPG.Creator.Core.Conditions;
-using VPG.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Core.Conditions;
+using VPG.Editor.UI.StepInspector.Menu;
 
-namespace VPG.CreatorEditor.UI.Conditions
+namespace VPG.Editor.UI.Conditions
 {
     /// <inheritdoc />
     public class ObjectInColliderMenuItem : MenuItem<ICondition>
