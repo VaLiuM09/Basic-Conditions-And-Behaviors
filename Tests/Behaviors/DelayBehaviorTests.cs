@@ -1,11 +1,11 @@
 using System.Collections;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Tests.Utils;
+using VPG.Core.Behaviors;
+using VPG.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace VPG.Creator.Core.Tests.Behaviors
+namespace VPG.Core.Tests.Behaviors
 {
     public class DelayBehaviorTests : RuntimeTests
     {

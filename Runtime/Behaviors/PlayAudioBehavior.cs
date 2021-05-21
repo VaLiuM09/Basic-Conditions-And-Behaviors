@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Runtime.Serialization;
-using VPG.Creator.Core.Attributes;
-using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Configuration;
-using VPG.Creator.Core.Configuration.Modes;
+using VPG.Core.Attributes;
+using VPG.Core.Audio;
+using VPG.Core.Configuration;
+using VPG.Core.Configuration.Modes;
 
-namespace VPG.Creator.Core.Behaviors
+namespace VPG.Core.Behaviors
 {
     /// <summary>
     /// A behavior that plays audio.

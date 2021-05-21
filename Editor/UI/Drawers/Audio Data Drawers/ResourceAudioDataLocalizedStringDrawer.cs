@@ -1,4 +1,4 @@
-﻿namespace VPG.CreatorEditor.UI.Drawers
+﻿namespace VPG.Editor.UI.Drawers
 {
     /// <summary>
     /// Custom drawer for localized strings in `Play Audio File` behavior's audio data to flatten visible hierarchy.

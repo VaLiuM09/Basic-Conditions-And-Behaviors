@@ -1,13 +1,13 @@
 using System.Collections;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Core.Configuration;
-using VPG.Creator.Core.SceneObjects;
-using VPG.Creator.Tests.Utils;
+using VPG.Core.Behaviors;
+using VPG.Core.Configuration;
+using VPG.Core.SceneObjects;
+using VPG.Tests.Utils;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace VPG.Creator.Core.Tests.Behaviors
+namespace VPG.Core.Tests.Behaviors
 {
     public class MoveObjectBehaviorTests : RuntimeTests
     {

@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Core.Conditions;
-using VPG.Creator.Core.Properties;
-using VPG.Creator.Tests.Builder;
-using VPG.Creator.Core.Internationalization;
-using VPG.Creator.Core.SceneObjects;
-using VPG.Creator.Tests.Utils;
-using VPG.Creator.Tests.Utils.Mocks;
+using VPG.Core.Audio;
+using VPG.Core.Behaviors;
+using VPG.Core.Conditions;
+using VPG.Core.Properties;
+using VPG.Tests.Builder;
+using VPG.Core.Internationalization;
+using VPG.Core.SceneObjects;
+using VPG.Tests.Utils;
+using VPG.Tests.Utils.Mocks;
 using UnityEngine.Assertions;
 using UnityEngine.TestTools;
 
-namespace VPG.Creator.Core.Tests.Serialization
+namespace VPG.Core.Tests.Serialization
 {
     public class JsonTrainingSerializerTests : RuntimeTests
     {

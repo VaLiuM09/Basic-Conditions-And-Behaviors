@@ -1,14 +1,14 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Core.Properties;
-using VPG.Creator.Core.Configuration;
-using VPG.Creator.Core.Internationalization;
-using VPG.Creator.Core.SceneObjects;
+using VPG.Core.Audio;
+using VPG.Core.Behaviors;
+using VPG.Core.Properties;
+using VPG.Core.Configuration;
+using VPG.Core.Internationalization;
+using VPG.Core.SceneObjects;
 
-namespace VPG.Creator.Tests.Builder
+namespace VPG.Tests.Builder
 {
     /// <summary>
     /// Basic step builder that creates step of type <typeparamref name="Step" />.

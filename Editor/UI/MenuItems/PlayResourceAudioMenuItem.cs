@@ -1,9 +1,9 @@
-﻿using VPG.Creator.Core.Audio;
-using VPG.Creator.Core.Behaviors;
-using VPG.Creator.Core.Internationalization;
-using VPG.CreatorEditor.UI.StepInspector.Menu;
+﻿using VPG.Core.Audio;
+using VPG.Core.Behaviors;
+using VPG.Core.Internationalization;
+using VPG.Editor.UI.StepInspector.Menu;
 
-namespace VPG.CreatorEditor.UI.Behaviors
+namespace VPG.Editor.UI.Behaviors
 {
     /// <inheritdoc />
     public class PlayResourceAudioMenuItem : MenuItem<IBehavior>
